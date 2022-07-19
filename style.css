@@ -1,0 +1,96 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, #0A2640 50%, #65E4A3 100%);
+}
+h2{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.container{
+    background-color: white;
+    margin: 1rem auto;
+    width: 60%;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.input-word{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.input-word input{
+    padding: 1em 0em 0em;
+    border: none;
+    width: 70%;
+    outline: none;
+    font-size: 1.1rem;
+    border-bottom: .3rem solid #0A2640;
+}
+.input-word button{
+    width: 25%;
+    background:linear-gradient(90deg,#0A2640 50%, #65E4A3 100%) ;
+    font-weight: bolder;
+    border: none;
+    border-radius: 1em;
+    color: white;
+}
+.input-word button:hover{
+    background:linear-gradient(90deg, #0A2640 50%, #65E4A3 100%) ;
+}
+.answer{
+    position: relative;
+}
+.answer h3{
+    font-size: 4rem;
+    color:  #0A2640;
+}
+.word{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+.details{
+    display: flex;
+    gap: 2rem;
+    color: #65E4A3;
+    font-size: 2rem;
+    margin: 1em 0em 1em ;
+}
+.meaning{
+    color: #0A2640;
+    font-size: 2rem;
+}
+.example{
+    margin: 1em 0em;
+    font-size: 1.5em;
+    color: #0A2640;
+}
+.word-example{
+    border-left: .3rem solid #65E4A3;
+    color: #65E4A3;
+    font-size: 1.5em;
+    padding-left: 1em;
+}
+.error{
+    text-align: center;
+    margin-top: 1em;
+    border: 0.05em solid red;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:600px){
+
+    .container{
+        width: 90%;
+    }
+    .input-word button{
+       padding:0.1rem 0.5rem;
+    }   
+}
