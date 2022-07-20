@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(90deg, #0A2640 50%, #65E4A3 100%);
+    background: #0A2640;
 }
 h2{
     text-align: center;
@@ -35,11 +35,12 @@ h2{
 }
 .input-word button{
     width: 25%;
-    background:linear-gradient(90deg,#0A2640 50%, #65E4A3 100%) ;
+    background:linear-gradient(0deg,#0A2640 50%, #65E4A3 100%) ;
     font-weight: bolder;
     border: none;
     border-radius: 1em;
     color: white;
+    cursor: pointer;
 }
 .input-word button:hover{
     background:linear-gradient(90deg, #0A2640 50%, #65E4A3 100%) ;
@@ -48,20 +49,23 @@ h2{
     position: relative;
 }
 .answer h3{
-    font-size: 4rem;
+    font-size: 2.5rem;
     color:  #0A2640;
+    margin: 0em 1em;
 }
 .word{
     display: flex;
     justify-content: center;
     margin: 1em;
+    padding: 0em 2em;
 }
 .details{
     display: flex;
+    justify-content: space-around;
     gap: 2rem;
     color: #65E4A3;
     font-size: 2rem;
-    margin: 1em 0em 1em ;
+    margin: 0em ;
 }
 .meaning{
     color: #0A2640;
@@ -73,7 +77,7 @@ h2{
     color: #0A2640;
 }
 .word-example{
-    border-left: .3rem solid #65E4A3;
+    border-left: 0.3rem solid #65E4A3;
     color: #65E4A3;
     font-size: 1.5em;
     padding-left: 1em;
@@ -93,4 +97,16 @@ h2{
     .input-word button{
        padding:0.1rem 0.5rem;
     }   
+    .meaning{
+        font-size: 1.5rem;
+        margin: 0em;
+    }
+    .details{
+        display: flex;
+        justify-content: space-around;
+        gap: 3rem;
+        color: #65E4A3;
+        font-size: 1rem;
+        margin: 0em ;
+    }
 }

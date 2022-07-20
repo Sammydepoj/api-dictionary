@@ -14,14 +14,14 @@ btn.addEventListener("click",()=>{
             </div>
             <div class="details">
                 <p>${data[0].meanings[0].partOfSpeech || ""}</p>
-                <p>${data[0].phonetic}</p>
+                <p>${data[0].phonetic || "Phonetic symbol not found"}</p>
             </div>
             <p class="meaning">
                 ${data[0].meanings[0].definitions[0].definition}
             </p>
             <p  class="example">Example</p>
             <p class="word-example">
-                ${data[0].meanings[0].definitions[0].example || ""}
+                ${data[0].meanings[0].definitions[0].example || "No example at this time"}
             </p>
         `
     }).catch(()=>{
